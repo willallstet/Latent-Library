@@ -65,7 +65,7 @@ else{
 
   async function fetchData() {
     try {
-      const response =  await fetch('./public/output.json');
+      const response =  await fetch('public/output.json');
       const embeddingJson = await response.json();
       for (const key in embeddingJson) {
         if (Object.hasOwnProperty.call(embeddingJson, key)) {
