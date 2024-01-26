@@ -36,7 +36,7 @@ else{
 
   // Create modal content
   const modalContent = document.createElement('div');
-  modalContent.innerHTML = '<h2>The Latent Library: <i>The Great Gatsby</i></h2><body>Each cube in the constellation represents a sentence in <i>The Great Gatsby</i> by F. Scott Fitzgerald. They are arranged by their latent embedding (reduced to three dimensions by SKLearn&apos;s TSNE algorithm) in the Google Universal Sentence Encoder. In effect, this means similar sentences are near each other. Use the arrow keys to move and the mouse to change the camera angle. Sentences in the crosshairs will be displayed in this window. Learn more <a href="https://willallstetter.com/latent" target="_blank">here</a>. Built by <a href="https://willallstetter.com" target="_blank">Will Allstetter</a>.</body>';
+  modalContent.innerHTML = '<h2>The Latent Library: <i>The Great Gatsby</i></h2><body>Each cube in the constellation represents a sentence in <i>The Great Gatsby</i> by F. Scott Fitzgerald. They are arranged by their latent embedding (reduced to three dimensions by SKLearn&apos;s PCA and TSNE algorithm) in the Google Universal Sentence Encoder. In effect, this means similar sentences are near each other. Use the arrow keys to move and the mouse to change the camera angle. Sentences in the crosshairs will be displayed in this window. Learn more <a href="https://willallstetter.com/latent" target="_blank">here</a>. Built by <a href="https://willallstetter.com" target="_blank">Will Allstetter</a>.</body>';
   modalContent.style.color = '#000';
   modalContainer.appendChild(modalContent);
 
@@ -199,7 +199,7 @@ else{
     // reset the color/text
     for (const cube of cubes) {
       cube.material.color.set(0xFFFFFF);
-      modalContent.innerHTML = '<h2>The Latent Library: <i>The Great Gatsby</i></h2><body>Each cube in the constellation represents a sentence in <i>The Great Gatsby</i> by F. Scott Fitzgerald. They are arranged by their latent embedding (reduced to three dimensions by SKLearn&apos;s TSNE algorithm) in the Google Universal Sentence Encoder. In effect, this means similar sentences are near each other. Use the arrow keys to move and the mouse to change the camera angle. Sentences in the crosshairs will be displayed in this window. Learn more <a href="https://willallstetter.com/latent" target="_blank">here</a>. Built by <a href="https://willallstetter.com" target="_blank">Will Allstetter</a>.</body>';
+      modalContent.innerHTML = '<h2>The Latent Library: <i>The Great Gatsby</i></h2><body>Each cube in the constellation represents a sentence in <i>The Great Gatsby</i> by F. Scott Fitzgerald. They are arranged by their latent embedding (reduced to three dimensions by SKLearn&apos;s PCA and TSNE algorithm) in the Google Universal Sentence Encoder. In effect, this means similar sentences are near each other. Use the arrow keys to move and the mouse to change the camera angle. Sentences in the crosshairs will be displayed in this window. Learn more <a href="https://willallstetter.com/latent" target="_blank">here</a>. Built by <a href="https://willallstetter.com" target="_blank">Will Allstetter</a>.</body>';
 
     }
     // Change color of intersected cubes to red
