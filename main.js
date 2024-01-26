@@ -210,10 +210,10 @@ else{
       }
     } 
 
-    /*for (const cube of cubes) {
+    for (const cube of cubes) {
       cube.rotation.x += 0.01;
       cube.rotation.y += 0.01;
-    }*/
+    }
 
     renderer.render(scene, camera);
   }
