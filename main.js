@@ -17,6 +17,8 @@ if (window.mobileAndTabletCheck()) {
   errorMessage.style.padding = '20px';
   errorMessage.style.color = '#FFFFFF'; // Adjust the color based on your design
   errorMessage.style.backgroundColor = '#000000'; // Adjust the background color based on your design
+  document.body.style.backgroundColor = "#FFFFFF"
+  errorMessage.style.fontFamily = 'monospace';
   document.body.appendChild(errorMessage);
 }
 else{
