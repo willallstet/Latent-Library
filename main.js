@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { PointerLockControls } from 'three/addons/controls/PointerLockControls.js';
+import { PointerLockControls } from './node_modules/three/addons/controls/PointerLockControls.js';
 if (window.innerWidth <= 600) {
   //document.body.style.display = 'none'; // Hide the entire body
 
