@@ -7,16 +7,14 @@ window.mobileAndTabletCheck = function() {
 };
 
 if (window.mobileAndTabletCheck()) {
-  //document.body.style.display = 'none'; // Hide the entire body
-
   // Display a message for mobile users
   const errorMessage = document.createElement('div');
   errorMessage.innerHTML = 'This website does not work on mobile devices.';
   errorMessage.style.fontSize = '6rem';
   errorMessage.style.textAlign = 'center';
   errorMessage.style.padding = '20px';
-  errorMessage.style.color = '#FFFFFF'; // Adjust the color based on your design
-  errorMessage.style.backgroundColor = '#000000'; // Adjust the background color based on your design
+  errorMessage.style.color = '#FFFFFF'; 
+  errorMessage.style.backgroundColor = '#000000';
   document.body.style.backgroundColor = "#FFFFFF"
   errorMessage.style.fontFamily = 'monospace';
   document.body.appendChild(errorMessage);
@@ -151,7 +149,7 @@ else{
   camera.add(crosshairHor);
   camera.add(crosshairVert);
 
-  scene.add(camera); // Add the camera to the scene
+  scene.add(camera);
 
   function onKeyDown(event) {
     switch (event.code) {
