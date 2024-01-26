@@ -7,7 +7,7 @@ window.mobileAndTabletCheck = function() {
 };
 
 if (window.mobileAndTabletCheck()) {
-  document.body.style.display = 'none'; // Hide the entire body
+  //document.body.style.display = 'none'; // Hide the entire body
 
   // Display a message for mobile users
   const errorMessage = document.createElement('div');
