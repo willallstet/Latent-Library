@@ -12,7 +12,7 @@ if (window.mobileAndTabletCheck()) {
   // Display a message for mobile users
   const errorMessage = document.createElement('div');
   errorMessage.innerHTML = 'This website does not work on mobile devices.';
-  errorMessage.style.fontSize = '20px';
+  errorMessage.style.fontSize = '6rem';
   errorMessage.style.textAlign = 'center';
   errorMessage.style.padding = '20px';
   errorMessage.style.color = '#FFFFFF'; // Adjust the color based on your design
